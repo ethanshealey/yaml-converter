@@ -1,12 +1,8 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-
 parser.add_argument('-c', '--comments', help='include comments', action='store_true')
-
 args = parser.parse_args()
-
-print(args)
 
 current = []
 with open('yaml-in.txt', 'r') as file:
